@@ -19,7 +19,7 @@ try `?clseries` to make sure everything has loaded correctly
 
 ## functions
 <b>clflag</b><br>
-clflag is designed to identify any cowlog csv observation sheets that do may host scorer input errors. It flags csv files that do not include an END entry, that have fewer than entries, and that report negative time differences between entries.
+clflag is designed to identify any cowlog csv observation sheets that may hoave scorer input errors. It flags csv files that do not include an END entry, that have fewer than three entries, and that report negative time differences between entries.
 
 <b>cldata</b><br>
 cldata generates a summary dataframe based on individual cowlog csv observations. Additionaly it generates a list of zones dientified in the observations.
