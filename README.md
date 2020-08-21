@@ -52,29 +52,27 @@ Note: every spreadsheet must end with a last observation coded END
 
 time     code      class
 
------    ------    -------
+5.1            zone_B                 1
 
-5.1       zone_B     1
+6.3            zone_C                 1
 
-6.3       zone_C     1
+12.4            zone_B                 1
 
-12.4      zone_B     1
+14.8            zone_A                 1
 
-14.8      zone_A     1
+22.3            zone_D                 1
 
-22.3      zone_D     1
+35.6            zone_E                 1
 
-35.6      zone_E     1
+35.8            zone_D                 1
 
-35.8      zone_D     1
+36.0            zone_E                 1
 
-36.0      zone_E     1
+39.1            zone_A                 1
 
-39.1      zone_A     1
+45.2            zone_C                 1
 
-45.2      zone_C     1
-
-70.4      END        0
+70.4            END                    0
 
 # necessary packages
 
