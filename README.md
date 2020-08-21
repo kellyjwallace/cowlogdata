@@ -63,7 +63,7 @@ The function of the csv sheets (and the way CowLog should be intended for use in
 
 Note: column names should always be "time" and "code" (optional to include "class")<br>
 Note: when calculating time, time always begins at the first entry (shown here as 0.015 seconds into the observation)<br>
-Note: every spreadsheet must end with a last observation coded END<br>
+Note: every spreadsheet must end with a last observation coded "END"<br>
 
 ![sheet!](https://github.com/kellyjwallace/cowlogdata/raw/master/examples/sheet.png)
 
