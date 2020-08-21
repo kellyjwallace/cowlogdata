@@ -4,7 +4,7 @@ Kelly Wallace (kwallace@utexas.edu)<br>
 CowLog: http://cowlog.org/cowlog3/<br>
 
 ## install
-Copy and paste everything that looks `like this` into R
+copy and paste everything that looks `like this` into R
 
 `if (!"devtools" %in% installed.packages()) install.packages("devtools"); library(devtools)`
 
