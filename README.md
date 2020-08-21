@@ -25,7 +25,7 @@ clflag is designed to identify any cowlog csv observation sheets that may hoave 
 cldata generates a summary dataframe based on individual cowlog csv observations. Additionaly it generates a list of zones dientified in the observations.
 
 <b>clseries</b><br>
-to visualize average movement in the arena over time, clseries splits the observations into ten even segments of the same length and visualizes an aveage of the relative time in zones per time segment.
+to visualize average movement in the arena over time, clseries splits the observations into ten even segments of the same length and visualizes the average relative time spent in zones per time segment.
 
 ![clseries!](https://github.com/kellyjwallace/cowlogdata/raw/master/examples/clseries.png)
 
