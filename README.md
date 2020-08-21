@@ -26,7 +26,7 @@ cldata generates a summary dataframe based on individual cowlog csv observations
 
 <b>clpie</b><br>
 to visualize where individuals are spending time in the observations, clpie generates a pie graph of proportion time in each zone, and can generate pie graphs per category.
-![clpie!](https://github.com/kellyjwallace/cowlogdata/examples/clpie.png)
+(https://github.com/kellyjwallace/cowlogdata/examples/clpie.png)
 
 
 <b>clboxplot</b><br>
