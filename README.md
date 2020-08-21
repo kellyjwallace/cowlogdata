@@ -25,7 +25,7 @@ clflag is designed to identify any cowlog csv observation sheets that do may hos
 cldata generates a summary dataframe based on individual cowlog csv observations. Additionaly it generates a list of zones dientified in the observations.
 
 <b>clpie</b><br>
-to visualize where individuals are spending time in the observations, clpie generates a pie graph of proportion time in each zone, and can generate pie graphs per category.
+to visualize where individuals are spending time in the observations, clpie generates a pie graph of proportion time in each zone, and can generate pie graphs per category.<br>
 ![clpie!](https://github.com/kellyjwallace/cowlogdata/raw/master/examples/clpie.png)
 
 
