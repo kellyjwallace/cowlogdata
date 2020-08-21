@@ -59,7 +59,7 @@ Note: the filename should be separated by underscores, and the index of relevant
 
 
 <b>example csv sheet</b><br>
-The function of the csv sheets (and the way CowLog should be intended for use in relation to this package) is to track the location data of a focal individual across different areas of an apparatus/enclosure. As seen below, a time stamp is recorded of when an individual transitioned to a new zone (e.g. X seconds into the observation, the focal individual moved from Zone Y to Zone C)<br>
+The function of the csv sheets (and the way CowLog should be intended for use in relation to this package) is to track the location data of a focal individual across different areas of an apparatus/enclosure. As seen below, a time stamp is recorded of when an individual transitioned to a new zone (e.g. 264 seconds into the observation, the focal individual moved from upper left corner to left interaction)<br>
 Note: column names should always be time and code (optional to include class but that is what CowLog generates)<br>
 Note: when calculating time, time always begins at the first entry (shown here as 5 seconds into the observation)<br>
 Note: every spreadsheet must end with a last observation coded END<br>
