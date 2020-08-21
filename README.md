@@ -25,18 +25,25 @@ clflag is designed to identify any cowlog csv observation sheets that do may hos
 cldata generates a summary dataframe based on individual cowlog csv observations. Additionaly it generates a list of zones dientified in the observations.
 
 <b>clpie</b><br>
-to visualize where individuals are spending time in the observations, clpie generates a pie graph of proportion time in each zone, and can generate pie graphs per category.<br>
+to visualize where individuals are spending time in the observations, clpie generates a pie graph of proportion time in each zone, and can generate pie graphs per category.
+
 ![clpie!](https://github.com/kellyjwallace/cowlogdata/raw/master/examples/clpie.png)
 
 
 <b>clboxplot</b><br>
 to visualize and compare the distribution of values, clboxplot generates bosplots of values and additionally can compares distributions across categories via t-tests and anovas.
 
+![clboxplot!](https://github.com/kellyjwallace/cowlogdata/raw/master/examples/clboxplot.png)
+
 <b>clreg</b><br>
 to determine which metrics correlate with each other and/or show interaction effects of factors, clreg runs linear regression models and generates summary scatterplots.
 
+![clreg!](https://github.com/kellyjwallace/cowlogdata/raw/master/examples/clreg.png)
+
 <b>clseries</b><br>
 to visualize average movement in the arena over time, clseries splits each observation into ten even segments of the same length and visualizes relative time in zones per segment.
+
+![clseries!](https://github.com/kellyjwallace/cowlogdata/raw/master/examples/clseries.png)
 
 
 ## notes
