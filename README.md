@@ -6,9 +6,9 @@ CowLog: http://cowlog.org/cowlog3/<br>
 ## fnstall
 Copy and paste everything that looks `like this` into R
 
-* `if (!"devtools" %in% installed.packages()) install.packages("devtools"); library(devtools)`
-* `install_github("kellyjwallace/cowlogdata")`
-*  `library(cowlogdata)`
+`if (!"devtools" %in% installed.packages()) install.packages("devtools"); library(devtools)`
+`install_github("kellyjwallace/cowlogdata")`
+`library(cowlogdata)`
 
 ## functions
 <b>clflag</b><br>
