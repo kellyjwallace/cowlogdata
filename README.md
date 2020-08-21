@@ -22,7 +22,7 @@ try `?clseries` to make sure everything has loaded correctly
 clflag is designed to identify any cowlog csv observation sheets that may hoave scorer input errors. It flags csv files that do not include an END entry, that have fewer than three entries, and that report negative time differences between entries.
 
 <b>cldata</b><br>
-cldata generates a summary dataframe based on individual cowlog csv observations. Additionaly it generates a list of zones dientified in the observations.
+cldata generates a summary dataframe based on individual cowlog csv observations. Additionaly it generates a list of zones identified in the observations.
 
 <b>clseries</b><br>
 to visualize average movement in the arena over time, clseries splits the observations into ten even segments of the same length and visualizes the average relative time spent in zones per time segment.
