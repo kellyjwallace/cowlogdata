@@ -55,7 +55,7 @@ NOTE: Many of the functions included in this package likely only work on Windows
 
 <b>example filename</b> <br>
 "arthur_male_round1.csv"<br>
-Note: the filename should be separated by underscores, and the index of relevant categocial data should be included. 
+Note: the filename must be separated by underscores. 
 
 
 <b>example csv sheet</b><br>
