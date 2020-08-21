@@ -46,7 +46,7 @@ The csv sheets, and the way CowLog shoudl be intended for use in relation to thi
 
 Note: column names shoudl always be time and code (optional to include class but that is what CowLog generates)
 
-Note: when calculating time, time always begins at the first entry (shown ehre as 5 seconds into the observation)
+Note: when calculating time, time always begins at the first entry (shown here as 5 seconds into the observation)
 
 Note: every spreadsheet must end with a last observation coded END
 
