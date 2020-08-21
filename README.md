@@ -34,37 +34,58 @@ NOTE: This package is designed to be used for locational data, not event logs. S
 NOTE: Many of the functions included in this package likely only work on Windows due to path character specifications (forwardslash vs backslash). 
 
 <b>example filename</b> 
+
 "arthur_male_round1.csv"
+
 Note: the filename should be separated by underscores, and the index of relevant categocial data should be included. 
 
 
 <b>example csv sheet</b>
-The csv sheets, and the way CowLog shoudl be intended for use in relation to this package, is tracking locatio data of a focal individual across different areas of an apparatus/enclosure. As seen below, a time stamp is recorded of when an individual transitioned to a new zone (e.g. 6.3 seconds into the observation, the focal individual moved from Zone B to Zone C)
+
+The csv sheets, and the way CowLog shoudl be intended for use in relation to this package, is tracking location data of a focal individual across different areas of an apparatus/enclosure. As seen below, a time stamp is recorded of when an individual transitioned to a new zone (e.g. 6.3 seconds into the observation, the focal individual moved from Zone B to Zone C)
 
 Note: column names shoudl always be time and code (optional to include class but that is what CowLog generates)
+
 Note: when calculating time, time always begins at the first entry (shown ehre as 5 seconds into the observation)
+
 Note: every spreadsheet must end with a last observation coded END
 
 time     code      class
+
 -----    ------    -------
+
 5.1       zone_B     1
+
 6.3       zone_C     1
+
 12.4      zone_B     1
+
 14.8      zone_A     1
+
 22.3      zone_D     1
+
 35.6      zone_E     1
+
 35.8      zone_D     1
+
 36.0      zone_E     1
+
 39.1      zone_A     1
+
 45.2      zone_C     1
+
 70.4      END        0
 
 # necessary packages
 
 dplyr
+
 ggplot2
+
 viridis
+
 stringr
+
 broom
 
 
