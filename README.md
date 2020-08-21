@@ -63,29 +63,7 @@ Note: column names should always be time and code (optional to include class but
 Note: when calculating time, time always begins at the first entry (shown here as 5 seconds into the observation)<br>
 Note: every spreadsheet must end with a last observation coded END<br>
 
-time___           code___                  class
-
-5.1___            zone_B___                  1
-
-6.3___             zone_C___                  1
-
-12.4___             zone_B___                  1
-
-14.8___             zone_A___                  1
-
-22.3___             zone_D___                  1
-
-35.6___             zone_E___                  1
-
-35.8___             zone_D___                  1
-
-36.0___             zone_E___                  1
-
-39.1___             zone_A___                  1
-
-45.2___             zone_C___                  1
-
-70.4___             END___                     0
+![sheet!](https://github.com/kellyjwallace/cowlogdata/raw/master/examples/sheet.png)
 
 ## necessary packages
 
