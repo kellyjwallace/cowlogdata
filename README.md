@@ -12,6 +12,8 @@ copy and paste everything that looks `like this` into R
 
 `library(cowlogdata)`
 
+try `?clseries` to make sure everything has loaded correctly
+
 ## functions
 <b>clflag</b><br>
 clflag is designed to identify any cowlog csv observation sheets that do may host scorer input errors. It flags csv files that do not include an END entry, that have fewer than entries, and that report negative time differences between entries.
