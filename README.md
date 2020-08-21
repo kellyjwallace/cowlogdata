@@ -5,12 +5,23 @@ Contact: Kelly Wallace
 email: kwallace@utexas.edu
 
 # Functions
-<b>clflag</b>: clflag is designed to identify any cowlog csv observation sheets that do may host scorer input errors. It flags csv files that do not include an END entry, that have fewer than entries, and that report negative time differences between entries.
-cldata: cldata generates a summary dataframe based on individual cowlog csv observations. Additionaly it generates a list of zones dientified in the observations.
-clpie: to visualize where individuals are spending time in the observations, clpie generates a pie graph of proportion time in each zone, and can generate pie graphs per category.
-clboxplot: to visualize and compare the distribution of values, clboxplot generates bosplots of values and additionally can compares distributions across categories via t-tests and anovas.
-clreg: to determine which metrics correlate with each other and/or show interaction effects of factors, clreg runs linear regression models and generates summary scatterplots.
-clseries: to visualize average movement in the arena over time, clseries splits each observation into ten even segments of the same length and visualizes relative time in zones per segment.
+<b>clflag</b>
+clflag is designed to identify any cowlog csv observation sheets that do may host scorer input errors. It flags csv files that do not include an END entry, that have fewer than entries, and that report negative time differences between entries.
+
+<b>cldata</b>
+cldata generates a summary dataframe based on individual cowlog csv observations. Additionaly it generates a list of zones dientified in the observations.
+
+<b>clpie</b>
+to visualize where individuals are spending time in the observations, clpie generates a pie graph of proportion time in each zone, and can generate pie graphs per category.
+
+<b>clboxplot</b>
+to visualize and compare the distribution of values, clboxplot generates bosplots of values and additionally can compares distributions across categories via t-tests and anovas.
+
+<b>clreg</b>
+to determine which metrics correlate with each other and/or show interaction effects of factors, clreg runs linear regression models and generates summary scatterplots.
+
+<b>clseries</b>
+to visualize average movement in the arena over time, clseries splits each observation into ten even segments of the same length and visualizes relative time in zones per segment.
 
 
 #adding more TBD
