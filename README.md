@@ -49,13 +49,13 @@ to determine which metrics correlate with each other and/or show interaction eff
 
 ## notes
 
-NOTE: This package is designed to use csv sheets from just base cowlog data, not data that has used modifiers<br>
-NOTE: This package is designed to be used for location data, not event logs. See below for the individual csv sheet requirements. <br>
-NOTE: Many of the functions included in this package likely only work on Windows due to path character specifications (forwardslash vs backslash). <br>
+Note: This package is designed to use csv sheets from just base cowlog data, not data that has used modifiers<br>
+Note: This package is designed to be used for location data, not event logs. See below for the individual csv sheet requirements. <br>
+Note: Many of the functions included in this package likely only work on Windows due to path character specifications (forwardslash vs backslash). <br>
 
 <b>example filename</b> <br>
 "arthur_male_round1.csv"<br>
-NOTE: the filename must be separated by underscores. 
+Note: the filename must be separated by underscores. 
 
 
 <b>example csv sheet</b><br>
