@@ -37,7 +37,7 @@ clpie <- function(dataname, zonename, factor, factorname){
     factorlist<-as.vector(unique(data[factorname]))
     j<-1
     for (j in 1:numfactor){
-      keeprows<-which(data[factorname] == factorlist[j,])
+      keeprows<-which(data[factorname] == as.character(factorlist[j,]))
       tempdata<-data[keeprows,]
       i<-1
       for (i in 1:length(zones)){
