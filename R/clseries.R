@@ -189,14 +189,14 @@ clseries <-function(pathtofile, zonename, seglength, factor, factorindex,
       tempfactorname <- unique(seriesdata[, factorname])[k]
       seriesdatafactor <- seriesdata %>% filter(seriesdata[factorname] == 
                                                   tempfactorname)
-      i <- 1
-      for (i in 1:10) {
-        tempcollist <- paste("segment", i, "-", sep = "")
-        tempseries <- seriesdata[names(seriesdata[grep(tempcollist, 
+      j <- 1
+      for (j in 1:10) {
+        tempcollist <- paste("segment", j, "-", sep = "")
+        tempseries <- seriesdatafactor[names(seriesdatafactor[grep(tempcollist, 
                                                        names(seriesdata))])]
         list<-as.vector(tempseries %>% summarise_if(is.numeric, mean))
         list<-as.numeric(list[1:length(list)])
-        fullframe[i,c(2:length(fullframe))]<-list
+        fullframe[j,c(2:length(fullframe))]<-list
       }
       segs <- rep(c("1", "2", "3", "4", "5", "6", "7", 
                     "8", "9", "t10"), length(zones))
