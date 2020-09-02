@@ -143,7 +143,6 @@ clseries <-function(pathtofile, zonename, seglength, factor, factorindex,
   fullframe$segment <- c(1:10)
   if (factor == FALSE) {
     i <- 1
-    j <- 1
     for (i in 1:10) {
       tempcollist <- paste("segment", i, "-", sep = "")
       tempseries <- seriesdata[names(seriesdata[grep(tempcollist, 
@@ -191,21 +190,13 @@ clseries <-function(pathtofile, zonename, seglength, factor, factorindex,
       seriesdatafactor <- seriesdata %>% filter(seriesdata[factorname] == 
                                                   tempfactorname)
       i <- 1
-      j <- 1
       for (i in 1:10) {
         tempcollist <- paste("segment", i, "-", sep = "")
-        tempseries <- seriesdatafactor[names(seriesdatafactor[grep(tempcollist, 
-                                                                   names(seriesdatafactor))])]
-        for (j in 1:length(zones)) {
-          tempserieszone <- tempseries[names(tempseries[grep(zones[j], 
-                                                             names(tempseries))])]
-          fullframe[i, zones[j]] <- 0
-          if (nrow(unique(tempserieszone)) > 1) {
-            meanzone <- sapply(tempserieszone, mean, 
-                               na.rm = TRUE)[1] * 100
-            fullframe[i, zones[j]] <- as.numeric(meanzone)
-          }
-        }
+        tempseries <- seriesdata[names(seriesdata[grep(tempcollist, 
+                                                       names(seriesdata))])]
+        list<-as.vector(tempseries %>% summarise_if(is.numeric, mean))
+        list<-as.numeric(list[1:length(list)])
+        fullframe[i,c(2:length(fullframe))]<-list
       }
       segs <- rep(c("1", "2", "3", "4", "5", "6", "7", 
                     "8", "9", "t10"), length(zones))
