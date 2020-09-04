@@ -49,7 +49,7 @@ clreg <- function (dataname, zonename, factor, factorname)
               p <- ggplot(temp, aes(measure1, measure2)) + 
                 geom_point(size = 4) + geom_smooth(method = "lm", 
                                                    se = FALSE, colour = "black") + theme(text = element_text(size = 10)) + 
-                labs(x = measure2, y = measure1) + theme_classic() + 
+                labs(x = measure1, y = measure2) + theme_classic() + 
                 annotate(geom = "text", label = paste("p value = ", 
                                                       round(p_value, 4)), x = -Inf, y = Inf, 
                          hjust = 0, vjust = 1)
@@ -100,7 +100,7 @@ clreg <- function (dataname, zonename, factor, factorname)
                                     color = category)) + geom_point(size = 4) + 
                 geom_smooth(method = "lm", se = FALSE) + 
                 theme(text = element_text(size = 10)) + 
-                labs(x = measure2, y = measure1) + theme_classic() + 
+                labs(x = measure1, y = measure2) + theme_classic() + 
                 scale_color_manual(values = colors) + 
                 annotate(geom = "text", label = paste("p value (interaction effect) = ", 
                                                       round(p_value, 4)), x = -Inf, y = Inf, 
