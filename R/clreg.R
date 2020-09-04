@@ -32,14 +32,12 @@ clreg <- function (dataname, zonename, factor, factorname)
             
             temp$measure1 <- as.character(temp$measure1)
             temp <- temp[temp$measure1 != "Inf", ]
-            temp$measure1 <- as.numeric(temp$measure1)
+            temp$measure1 <- as.numeric(as.character(temp$measure1))
             
             temp$measure2 <- as.character(temp$measure2)
             temp <- temp[temp$measure2 != "Inf", ]
-            temp$measure2 <- as.numeric(temp$measure2)
+            temp$measure2 <- as.numeric(as.character(temp$measure2))
             
-            temp$measure1 <- as.numeric(temp$measure1)
-            temp$measure2 <- as.numeric(temp$measure2)
             mod <- lm(temp$measure2 ~ temp$measure1)
             p_value <- summary(mod)$coefficients[8]
             print(paste(measure1, measure2, "p value = ", 
@@ -77,15 +75,13 @@ clreg <- function (dataname, zonename, factor, factorname)
                                 "category")
             temp$measure1 <- as.character(temp$measure1)
             temp <- temp[temp$measure1 != "Inf", ]
-            temp$measure1 <- as.numeric(temp$measure1)
+            temp$measure1 <- as.numeric(as.character(temp$measure1))
             
             temp$measure2 <- as.character(temp$measure2)
             temp <- temp[temp$measure2 != "Inf", ]
-            temp$measure2 <- as.numeric(temp$measure2)
+            temp$measure2 <- as.numeric(as.character(temp$measure2))
             
             
-            temp$measure1 <- as.numeric(temp$measure1)
-            temp$measure2 <- as.numeric(temp$measure2)
             colors <- viridis(length(unique(temp$category)))
             p_value <- NA
             omitted <- na.omit(temp)
