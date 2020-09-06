@@ -25,7 +25,7 @@ clboxplot <- function (dataname, factor, factorname)
       colnames(temp) <- "value"
       p <- ggplot(temp, aes(x = "", y = value)) + geom_boxplot() + 
         geom_dotplot(binaxis = "y", stackdir = "center", 
-                     dotsize = 1) + theme_classic() + labs(title = "all data", 
+                     dotsize = 0.5) + theme_classic() + labs(title = "all data", 
                                                            x = "", y = paste(collist[i], "--mean:", avg)) + 
         theme(aspect.ratio = 3)
       plot(p)
@@ -69,7 +69,7 @@ clboxplot <- function (dataname, factor, factorname)
             temp$factor<-as.factor(temp$factor)
             p <- ggplot(temp, aes(x = factor, y = value)) + 
               geom_boxplot() + geom_dotplot(binaxis = "y", 
-                                            stackdir = "center", dotsize = 1) + theme_classic() + 
+                                            stackdir = "center", dotsize = 0.5) + theme_classic() + 
               labs(title = (paste(collist[i], "by", factorname)), 
                    x = "", y = collist[i]) + theme(aspect.ratio = 3) + 
               theme(axis.text.x = element_text(angle = 90)) + 
@@ -94,10 +94,11 @@ clboxplot <- function (dataname, factor, factorname)
         }
         print(paste(factorname, collist[[i]], "p value (anova) = ", 
                     round(p_value_anova[1], 4)))
+        if(is.na(p_value_anova)== FALSE){
         if (p_value_anova < 0.05) {
           p <- ggplot(temp, aes(x = factor, y = value)) + 
             geom_boxplot() + geom_dotplot(binaxis = "y", 
-                                          stackdir = "center", dotsize = 1) + theme_classic() + 
+                                          stackdir = "center", dotsize = 0.5) + theme_classic() + 
             labs(title = (paste(collist[i], "by", factorname)), 
                  x = "", y = collist[i]) + theme(aspect.ratio = 3) + 
             theme(axis.text.x = element_text(angle = 90)) + 
@@ -105,7 +106,7 @@ clboxplot <- function (dataname, factor, factorname)
                                                   round(p_value_anova[1], 4)), x = -Inf, 
                      y = Inf, hjust = 0, vjust = 1)
           plot(p)
-        }
+        }}
       }
     }
   }
