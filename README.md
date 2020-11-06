@@ -39,7 +39,7 @@ to visualize where individuals are spending time in the observations, clpie gene
 
 
 <b>clboxplot</b><br>
-to visualize and compare the distribution of values, clboxplot generates bosplots of values and additionally can compare distributions across categories via t-tests and anovas.
+to visualize and compare the distribution of values, clboxplot generates boxplots of values and additionally can compare distributions across categories via t-tests and anovas.
 
 ![clboxplot!](https://github.com/kellyjwallace/cowlogdata/raw/master/examples/clboxplot.png)
 
