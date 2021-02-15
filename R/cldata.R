@@ -56,7 +56,7 @@ cldata <- function(pathtofile, outputdataname, outputzonename, factor, factorind
       data$vid_length[i]<-vid_length
       data[i,tempname]<-0
       if(file %>% filter(code == unique_codes[j]) %>% nrow() >0){
-        data[i,tempname]<-file %>% filter(code == unique_codes[j]) %>% select(time_difference) %>% sum()}}}
+        data[i,tempname]<-file %>% filter(code == unique_codes[j]) %>% dplyr::select(time_difference) %>% sum()}}}
 
   i<-1
   for (i in 1:length(unique_codes)){
