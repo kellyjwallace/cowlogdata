@@ -35,7 +35,7 @@ clboxplot <- function (dataname, factor, factorname)
     collist <- collist[collist != factorname]
     i <- 1
     for (i in 1:(length(collist))) {
-      temp <- data %>% select(c(collist[[i]], factorname))
+      temp <- data %>% dplyr::select(c(collist[[i]], factorname))
       temp <- as.data.frame(temp)
       colnames(temp) <- c("value", "factor")
       temp$value<-as.character(temp$value)
